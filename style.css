@@ -1,0 +1,104 @@
+/* Basic styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Header styles */
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative; /* Make header a positioning context */
+    z-index: 2; /* Ensure header is above navigation */
+}
+
+/* Logo grid styles */
+.logo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 150px);
+    gap: 20px;
+    justify-content: center; /* Center the grid horizontally */
+}
+
+.logo-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.logo-box img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+}
+
+/* Navigation styles */
+nav {
+    background-color: white;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Center navigation links */
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Section styles */
+section {
+    padding: 50px 20px;
+}
+
+/* Section styles */
+section {
+    padding: 50px 20px;
+}
+
+/* Add more styling as needed */
+
+/* Apply full height to header */
+.full-height {
+    height: 100vh; /* 100% of the viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    header {
+        padding: 10px; /* Reduce header padding on smaller screens */
+    }
+    
+    nav {
+        padding: 5px; /* Reduce navigation padding on smaller screens */
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack navigation links vertically on smaller screens */
+        align-items: center; /* Center navigation links vertically */
+    }
+
+    nav li {
+        margin: 5px 0; /* Adjust spacing between navigation links on smaller screens */
+    }
+}

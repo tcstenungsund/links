@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Your Link Compilation</title>
+</head>
+<body>
+    <header class="full-height">
+        <div class="logo-grid">
+            <div class="logo-box"><a href="#"><img src="images/cisco.png" alt="Cisco"></a></div>
+            <div class="logo-box"><a href="#"><img src="images/microsoft.png" alt="Microsoft"></a></div>
+            <div class="logo-box"><a href="#"><img src="images/codium.png" alt="Codium"></a></div>
+            <div class="logo-box"><a href="#"><img src="images/firefox.png" alt="Firefox"></a></div>
+            <div class="logo-box"><a href="#"><img src="images/mdn.png" alt="MDN"></a></div>
+            <div class="logo-box"><a href="#"><img src="logo6.png" alt="Logo 6"></a></div>
+            <!-- Repeat for 3 rows -->
+        </div>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#audio">Audio</a></li>
+            <li><a href="#video">Video</a></li>
+            <li><a href="#webbutveckling">Web Development</a></li>
+            <li><a href="#ai">AI</a></li>
+        </ul>
+    </nav>
+
+    <section id="audio">
+        <h2>Audio</h2>
+        <div class="tool-list">
+            <ul>
+                <li><a href="https://www.audacityteam.org/">Audacity</a></li>
+                <li><a href="https://lmms.io/">LMMS</a></li>
+            </ul>
+        </div>
+    </section>
+    
+    <section id="video">
+        <h2>Video</h2>
+        <div class="tool-list">
+            <ul>
+                <li><a href="https://www.openshot.org/">OpenShot</a></li>
+                <li><a href="https://www.shotcut.org/">Shotcut</a></li>
+            </ul>
+        </div>
+    </section>
+    
+    <section id="webdev">
+        <h2>Web Development</h2>
+        <div class="tool-list">
+            <ul>
+                <li><a href="https://getbootstrap.com/">Bootstrap</a></li>
+                <li><a href="https://jquery.com/">jQuery</a></li>
+            </ul>
+        </div>
+    </section>
+    
+    <section id="ai">
+        <h2>AI</h2>
+        <div class="tool-list">
+            <ul>
+                <li><a href="https://www.tensorflow.org/">TensorFlow</a></li>
+                <li><a href="https://pytorch.org/">PyTorch</a></li>
+            </ul>
+        </div>
+    </section>
+    
+    <section id="windows">
+        <h2>Windows</h2>
+        <div class="tool-list">
+            <ul>
+                <li><a href="https://www.libreoffice.org/">LibreOffice</a></li>
+                <li><a href="https://www.gimp.org/">GIMP</a></li>
+            </ul>
+        </div>
+    </section>
+    
+    <section id="linux">
+        <h2>Linux</h2>
+        <div class="tool-list">
+            <ul>
+                <li><a href="https://www.ubuntu.com/">Ubuntu</a></li>
+                <li><a href="https://www.linuxmint.com/">Linux Mint</a></li>
+            </ul>
+        </div>
+    </section>
+    
+    <section id="programming">
+        <h2>Programming</h2>
+        <div class="tool-list">
+            <ul>
+                <li><a href="https://code.visualstudio.com/">Visual Studio Code</a></li>
+                <li><a href="https://atom.io/">Atom</a></li>
+            </ul>
+        </div>
+    </section>
+    <!-- Repeat the above pattern for other categories -->
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+    
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
