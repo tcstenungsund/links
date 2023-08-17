@@ -51,7 +51,6 @@ nav ul {
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: center; /* Center navigation links */
 }
 
 nav li {
@@ -60,7 +59,18 @@ nav li {
 
 nav a {
     text-decoration: none;
-    color: black;
+    color: darkgrey; /* Dark grey color for unvisited links */
+    border-bottom: 2px solid transparent; /* Hide bottom line by default */
+    transition: color 0.3s, border-bottom 0.3s; /* Transition effects */
+}
+
+nav a:hover {
+    color: black; /* Change color on hover */
+    border-bottom: 2px solid black; /* Show bottom line on hover */
+}
+
+nav a:visited {
+    color: darkgrey; /* Dark grey color for visited links */
 }
 
 /* Section styles */
@@ -73,7 +83,6 @@ section {
     padding: 50px 20px;
 }
 
-/* Add more styling as needed */
 
 /* Apply full height to header */
 .full-height {
