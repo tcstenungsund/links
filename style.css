@@ -59,18 +59,18 @@ nav li {
 
 nav a {
     text-decoration: none;
-    color: darkgrey; /* Dark grey color for unvisited links */
+    color: black; /* Dark grey color for unvisited links */
     border-bottom: 2px solid transparent; /* Hide bottom line by default */
     transition: color 0.3s, border-bottom 0.3s; /* Transition effects */
 }
 
 nav a:hover {
-    color: black; /* Change color on hover */
+    color: darkgray; /* Change color on hover */
     border-bottom: 2px solid black; /* Show bottom line on hover */
 }
 
 nav a:visited {
-    color: darkgrey; /* Dark grey color for visited links */
+    color: black; /* Dark grey color for visited links */
 }
 
 /* Section styles */
@@ -81,6 +81,23 @@ section {
 /* Section styles */
 section {
     padding: 50px 20px;
+}
+
+section a{
+    text-decoration: none;
+    color: black; /* Dark grey color for unvisited links */
+    border-bottom: 2px solid transparent; /* Hide bottom line by default */
+    transition: color 0.3s, border-bottom 0.3s; /* Transition effects */
+
+}
+
+section a:hover{
+    color: darkgray; /* Change color on hover */
+    border-bottom: 2px solid black; /* Show bottom line on hover */
+
+}
+section a:visited{
+    color: black; /* Dark grey color for visited links */
 }
 
 
